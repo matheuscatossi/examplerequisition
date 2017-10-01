@@ -14,6 +14,7 @@ public class Constants {
     public static final String BASE_URL = "https://hacka-petrobras.herokuapp.com/locais_brmania/";
 
     public static final String GET_LOCALE = "consulta/5";
+    public static final String GET_BR_MAIN = "br_main";
 
 }
 

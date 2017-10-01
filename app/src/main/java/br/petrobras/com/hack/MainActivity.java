@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private Call<ArrayList<Locale>> callLocale;
+    //private Call<Locale> callMania;
     private APIInterface apiService;
     private ArrayList<Locale> l;
     @Override
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         apiService = APIClient.getService().create(APIInterface.class);
         callLocale = apiService.getLocale();
+        //callMania = apiService.getBrMania();
+
 
         final Context context = this.getApplicationContext();
 
@@ -69,6 +72,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+//        callMain.enqueue(new Callback<Locale>() {
+//            @Override
+//            public void onResponse(Call<ArrayList<Locale>> call, Response<ArrayList<Locale>> response) {
+//
+//                Locale locales = response.body();
+//
+//                tv_nome_cliente = locales.getNomeCliente();
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ArrayList<Locale>> call, Throwable t) {
+//                Log.e("Networking", t.toString());
+//
+//            }
+//        });
 
 
     }

@@ -18,5 +18,8 @@ public interface APIInterface {
     @GET(Constants.GET_LOCALE)
     Call<ArrayList<Locale>> getLocale();
 
+    @GET(Constants.GET_BR_MAIN)
+    Call<Locale> getBrMania();
+
 
 }
